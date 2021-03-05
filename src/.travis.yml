@@ -1,9 +1,9 @@
-languaje: node_js
+language: node_js
 cache:
   directories:
     - ~/.npm
 node_js:
-  - / '12'
+  - "12"
 git:
   depth: 3
 script:
@@ -15,6 +15,7 @@ deploy:
   keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist/
-  target-branch: gh-page
-  commit:message: "Deploy Release"
-  on: branch:main
+  target-branch: gh-pages
+  commit_message: "Deploy Release"
+  on:
+    branch: main
